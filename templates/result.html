@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result</title>
+  </head>
+  <body>
+    <h1>{{msg}}</h1>
+    {% if obj %}
+    <h3>{{obj.name}}</h3>
+    <h3>{{obj.address}}</h3>
+    <h3>{{obj.age}}</h3>
+    <h3>{{obj.dob}}</h3>
+    <img src="{{obj.pic.url}}" alt="" width="500" />
+    <h3>Gender : {{obj.gender}}</h3>
+    <h3>Location : {{obj.location}}</h3>
+    {% if obj.covid %}
+    <h3>Been Tested Covid Positive</h3>
+    {% else %}
+    <h3>Haven't been tested Covid positive</h3>
+    {% endif %}
+    <h3>{{obj.budget}}</h3>
+    {% endif %} {% if obj.chennai %}
+    <h3>Chennai</h3>
+    {% endif %} {% if obj.bangalore %}
+    <h3>Bangalore</h3>
+    {% endif %} {% if obj.delhi %}
+    <h3>Delhi</h3>
+    {% endif %} {% if obj.jaipur %}
+    <h3>Jaipur</h3>
+    {% endif %}
+    
+
+  </body>
+</html>
